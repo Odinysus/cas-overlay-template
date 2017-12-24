@@ -75,12 +75,6 @@
             <scope>runtime</scope>
         </dependency>
 <!--服务注册-->
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-json-service-registry</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-
         <!--数据库认证相关 start-->
         <dependency>
             <groupId>org.apereo.cas</groupId>
@@ -201,7 +195,7 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <pgpKeyServer>hkp://pool.sks-keyservers.net</pgpKeyServer>
+                            <pgpKeyServer>http://pool.sks-keyservers.net</pgpKeyServer>
                             <pgpKeysCachePath>${settings.localRepository}/pgpkeys-cache</pgpKeysCachePath>
                             <scope>test</scope>
                             <verifyPomFiles>true</verifyPomFiles>
